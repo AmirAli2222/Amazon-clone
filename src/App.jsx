@@ -4,6 +4,7 @@ import Header from './Components/Header/Header'
 import { BrowserRouter } from 'react-router-dom'
 import CarouselEffect from './Components/Carousel/Carousel'
 import Category from './Components/Category/Category'
+import Product from './Components/Product/Product'
 function App() {
   
 
@@ -13,6 +14,7 @@ function App() {
     <Header/>
     <CarouselEffect/>
     <Category/>
+    <Product/>
     </BrowserRouter>
     </>
   )

@@ -1,0 +1,203 @@
+/* ✅ Header Container - Fixes Overall Layout */
+.header__container {
+    background-color: #131921; /* Amazon dark blue */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    height: 60px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    flex-wrap: nowrap; /* Ensures everything stays in one row */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* z-index: 1000; */
+}
+.fixed{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* ✅ Fix Logo & Delivery Alignment */
+.logo__container {
+    display: flex;
+    align-items: center;
+    min-width: 250px; /* Ensures it doesn’t shrink */
+    flex-wrap: nowrap; 
+    overflow: hidden;
+    gap: 10px;
+}
+.logo__container img {
+    width: 100px; /* Adjust logo size */
+    height: auto;
+}
+.delivery {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    font-size: 13px;
+    color: white;
+}
+.delivery p {
+    font-size: 11px;
+    margin: 0;
+}
+.delivery span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ff9900; /* Amazon orange */
+}
+
+/* ✅ Fix Search Bar */
+.search {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px; /* Make the search bar wider */
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+.search:hover {
+    border: 1px solid #ff9900; /* Amazon hover effect */
+}
+.search select {
+    padding: 8px;
+    border: none;
+    background: #f3f3f3;
+}
+.search input {
+    flex-grow: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+.search input::placeholder {
+    color: #888; /* Amazon light gray text */
+    font-size: 14px;
+}
+.search svg {
+    background-color: #febd69;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+
+/* ✅ Fix Right-Side Elements (Language, Account, Orders, Cart) */
+.order__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 25px; /* Adjust spacing */
+    min-width: 350px; /* Ensures enough space */
+    flex-wrap: nowrap;
+}
+.order__container a {
+    color: white !important;  /* Force white text */
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.language {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.language select {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 14px;
+}
+.language img {
+    width: 24px;
+    height: 16px;
+    object-fit: cover;
+}
+.account {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}
+.orders {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ✅ Fix Cart Icon & Positions Item Count Inside */
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+.cart svg {
+    width: 50px; /* Adjust size */
+    height: 35px;
+}
+.cart span {
+    position: absolute;
+    top: 1px; /* Moves number inside the cart */
+    right: 15px; /* Aligns number properly */
+    font-size: 10px;
+    font-weight: bold;
+    background-color: orange;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* ✅ Adds Navigation Bar Below Header */
+.navbar {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #ff9900;
+}
+.lower_header {
+  background-color: #232f3e;
+  color: white;
+} 
+ .lower_header ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+.lower_header ul li {
+  padding: 8px;
+}
+.lower_header ul li:first-child {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}

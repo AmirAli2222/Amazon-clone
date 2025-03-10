@@ -1,6 +1,6 @@
 import React, {useContext} from 'react'
 import Layout from '../../Components/Layout/Layout'
-import { DataContext } from '../../Components/DataProvider/DataProvider'
+// import { DataContext } from '../../Components/DataProvider/DataProvider'
 import ProductCard from '../../Components/Product/ProductCard';
 import {Link} from 'react-router-dom';
 import classes from './Cart.module.css'

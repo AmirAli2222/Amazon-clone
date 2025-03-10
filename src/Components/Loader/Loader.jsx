@@ -10,7 +10,7 @@ function Loader() {
         height: "50vh",
       }}
     >
-      <ClockLoader  />
+      <ClockLoader color="#febd69" />
     </div>
   );
 }

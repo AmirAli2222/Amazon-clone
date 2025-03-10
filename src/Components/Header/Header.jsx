@@ -14,7 +14,6 @@ const Header = () => {
     
     return (
       <section className={classes.fixed}>
-        <section>
           {/* <section> */}
           <div className={classes.header__container}>
             {/* logo */}
@@ -77,9 +76,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-        </section>
-        <LowerHeader />
-    
+          <LowerHeader />
       </section>
     );
 };

@@ -21,7 +21,7 @@
     z-index: 100;
 }
 
-/* ✅ Fix Logo & Delivery Alignment */
+/*  Fix Logo & Delivery Alignment */
 .logo__container {
     display: flex;
     align-items: center;
@@ -52,7 +52,7 @@
     color: #ff9900; /* Amazon orange */
 }
 
-/* ✅ Fix Search Bar */
+/* Fix Search Bar */
 .search {
     display: flex;
     align-items: center;
@@ -90,7 +90,7 @@
     border-radius: 0 8px 8px 0;
 }
 
-/* ✅ Fix Right-Side Elements (Language, Account, Orders, Cart) */
+/* Fix Right-Side Elements (Language, Account, Orders, Cart) */
 .order__container {
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@
     font-weight: bold;
 }
 
-/* ✅ Fix Cart Icon & Positions Item Count Inside */
+/*  Fix Cart Icon & Positions Item Count Inside */
 .cart {
     display: flex;
     align-items: center;
@@ -163,7 +163,7 @@
     border-radius: 50%;
 }
 
-/* ✅ Adds Navigation Bar Below Header */
+/*  Adds Navigation Bar Below Header */
 .navbar {
     background-color: #232f3e;
     color: white;

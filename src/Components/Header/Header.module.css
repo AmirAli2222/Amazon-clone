@@ -1,4 +1,4 @@
-/* ✅ Header Container - Fixes Overall Layout */
+ /* Header Container - Fixes Overall Layout */
 .header__container {
     background-color: #131921; /* Amazon dark blue */
     display: flex;
@@ -178,7 +178,7 @@
     color: white;
     font-weight: bold;
 }
-.navbar a:hover {
+ .navbar a:hover {
     color: #ff9900;
 }
 .lower_header {
@@ -197,4 +197,4 @@
   display: flex;
   gap: 2px;
   align-items: center;
-}
+} 

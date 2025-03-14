@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Rating } from "@mui/material";
 import classes from "./Cart.module.css";
 import { DataContext } from "../../Components/DataProvider/DataProvider";
-import { Type } from "../../Utility/action.type"; // ✅ Import Correct Action Types
+import { Type } from "../../Utility/action.type"; //  Import Correct Action Types
 import { BiSolidUpArrow, BiSolidDownArrow } from "react-icons/bi";
 
 function Cart() {
@@ -27,21 +27,21 @@ function Cart() {
           ) : (
             basket?.map((item) => (
               <div key={item.id} className={classes.cart__item}>
-                {/* ✅ Product Image */}
+                {/*  Product Image */}
                 <img
                   src={item.image}
                   alt={item.title}
                   className={classes.cart__image}
                 />
 
-                {/* ✅ Product Details */}
+                {/*  Product Details */}
                 <div className={classes.cart__details}>
                   <h3>{item.title}</h3>
 
-                  {/* ✅ Product Description */}
+                  {/*  Product Description */}
                   <p className={classes.description}>{item.description}</p>
 
-                  {/* ✅ Show Rating */}
+                  {/*  Show Rating */}
                   <div className={classes.rating}>
                     <Rating
                       value={item.rating?.rate}
@@ -104,7 +104,7 @@ function Cart() {
           <div className={classes.subtotal}>
             <p>
               Subtotal ({basket.length} items):{" "}
-              <strong>💲{total.toFixed(2)}</strong>
+              <strong>${total.toFixed(2)}</strong>
             </p>
             <span>
               <input type="checkbox" />

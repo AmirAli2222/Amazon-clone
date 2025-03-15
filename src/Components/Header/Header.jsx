@@ -9,6 +9,7 @@ import LowerHeader from "./LowerHeader";
 import { auth } from "../../Utility/firebase"; // Import Firebase auth
 import { Type } from "../../Utility/action.type"; // Import action type
 
+
 const Header = () => {
   // Get `user` & `basket` from context
   const [{ user, basket }, dispatch] = useContext(DataContext);
@@ -87,7 +88,8 @@ const Header = () => {
 
             {/*  Cart with Dynamic Count */}
             <Link to="/cart" className={classes.cart}>
-              <BiCart size={35} />
+              {/* <BiCart size={35} /> */}
+              <img src="/cart2.png" alt="" />
               <span>{basketCount}</span> {/* Shows item count */}
             </Link>
           </div>

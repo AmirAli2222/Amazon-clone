@@ -23,7 +23,7 @@ function ProductCard({ product, flex, isDesc, renderAdd }) {
   return (
     <div
       className={`${classes.card__container} ${
-        isDesc && classes.product_flexed
+        flex && classes.product_flexed
       }`}
     >
       <Link to={`/products/${id}`}>

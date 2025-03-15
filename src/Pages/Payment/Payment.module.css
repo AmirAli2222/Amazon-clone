@@ -28,11 +28,11 @@
 }
 .flex img{
     width:80px !important;
-    height: auto;  
+    /* height: auto;   */
 }
 .flex div{
     height: auto !important;
-    gap: 10px;
+    gap: 10px !important;
     
 }
 .payment__card__container{

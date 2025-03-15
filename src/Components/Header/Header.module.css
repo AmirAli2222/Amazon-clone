@@ -151,14 +151,18 @@
     width: 50px; /* Adjust size */
     height: 35px;
 }
+.cart img{
+    width: 75px;
+}
 .cart span {
     position: absolute;
     top: 1px; /* Moves number inside the cart */
     right: 15px; /* Aligns number properly */
-    font-size: 10px;
+    left:17px;
+    font-size: 15px;
     font-weight: bold;
-    background-color: orange;
-    color: black;
+    /* background-color: orange; */
+    color: orange;
     padding: 2px 6px;
     border-radius: 50%;
 }

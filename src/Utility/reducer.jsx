@@ -7,7 +7,7 @@ export const initialState = {
 
 export const reducer = (state, action) => {
   switch (action.type) {
-    // ✅ Add Item to Cart (or Increase Quantity)
+    // Add Item to Cart (or Increase Quantity)
     case Type.ADD_TO_BASKET: {
       const existingItem = state.basket.find(
         (item) => item.id === action.item.id
@@ -60,12 +60,16 @@ export const reducer = (state, action) => {
           .filter((item) => item.amount > 0), // Remove item if amount reaches 0
       };
     }
-
-    case Type.SET_USER:
+    case Type.EMPTY_BASKET:
       return{
         ...state,
-        user:action.user
-      }
+        basket:[]
+      };
+    case Type.SET_USER:
+      return {
+        ...state,
+        user: action.user,
+      };
     default:
       return state;
   }

@@ -1,13 +1,14 @@
 import firebase from "firebase/compat/app";
-// auth
-import {getAuth} from "firebase/auth"
-import "firebase/compat/firestore"
-import "firebase/compat/auth"
+import { getAuth } from "firebase/auth";
+import "firebase/compat/firestore";
+import "firebase/compat/auth";
 
+// Ensure all variables are loaded correctly
+console.log("Firebase API Key:", import.meta.env.VITE_FIREBASE_API_KEY);
 
-// Your web app's Firebase configuration
+// Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "MISSING_API_KEY",
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
   projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
@@ -15,11 +16,8 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-
-
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
-export const auth= getAuth(app)
-export const db=app.firestore();
-
+export const auth = getAuth(app);
+export const db = app.firestore();
 
